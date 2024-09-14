@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expo Emprende 2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./imagenes/Logo alondra.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header class="barnav">
+        <img src="./imagenes/Logo alondra.svg" alt="">
+        <img src="./imagenes/expoEmprende.svg" alt="">
+    </header>
+    <div id="anuncio_mostrar">
+        <div class="fondo">
+            <div class="container">
+                <h1>Tu registro se realizo con exito</h1>
+                <p>En caso de que no te llegue un correo por favor contactanos por las redes sociales y te daremos
+                    pronta respuesta</p>
+                <button id="aceptar_anuncio">Aceptar</button>
+            </div>
+        </div>
+    </div>
+    <section class="form">
+        <div class="form-container">
+            <p>Alondra te invita a adentrarte en el mundo de productos para uñas, pestañas y mas. Completa el formulario
+                y asegura tu lugar sin costo</p>
+            <form id="eventForm">
+                <h2>Registro para el evento</h2>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Ingresa tu nombre..." id="nombre" autocomplete="username" name="nombre"
+                    required>
+
+                <label for="apellido">Apellidos:</label>
+                <input type="text" placeholder="Ingresa tus apellidos..." id="apellido" name="apellido" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" placeholder="Ingresa tu correo electronico..." id="correo" name="email" required>
+
+                <label for="telefono">Número de teléfono:</label>
+                <input type="number" placeholder="Ingresa tu telefono..." id="telefono" name="telefono" required>
+
+                <label for="codigo_postal">Código Postal:</label>
+                <input type="text" placeholder="Ingresa tu Codigo postal..." id="codigo_postal" name="codigo_postal"
+                    required>
+
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" placeholder="Ingresa tu ciudad..." id="ciudad" name="ciudad" required>
+
+                <label for="anuncio">¿Cómo te enteraste del anuncio?</label>
+                <select id="anuncio" name="anuncio" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="redes sociales">Redes sociales</option>
+                    <option value="en tienda">En tienda</option>
+                    <option value="un amigo">Un amigo</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <div id="provisional">
+
+                </div>
+
+                <label for="objetivo">¿Cuál es tu objetivo al asistir?</label>
+                <select id="objetivo" name="objetivo" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="vender producto">Vender producto</option>
+                    <option value="ser distribuidor">Ser distribuidor</option>
+                    <option value="abrir negocio">Abrir su propio negocio</option>
+                </select>
+
+                <label for="dia">¿Qué día asistirás?</label>
+                <select id="dia" name="dia" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="sabado">Sábado 10AM - 7PM</option>
+                    <option value="domingo">Domingo 10AM - 5PM</option>
+                    <option value="ambos">Ambos dias</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+                <div id="status"></div>
+            </form>
+        </div>
+        <div class="form-container">
+            <p>Siguenos en nuestras redes para estar al tanto de todas las novedades y ofertas exclusivas del evento</p>
+            <ul class="social-icons">
+                <li>
+                    <button>
+                        <a href="https://instagram.com/alondra.aragon.1">
+                            <img src="./imagenes/instagram.svg" alt="">
+                        </a>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <a href="https://tiktok.com/">
+                            <img src="./imagenes/tiktok.svg" alt="">
+                        </a>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <a href="https://facebook.com/">
+                            <img src="./imagenes/facebook.svg" alt="">
+                        </a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <aside class="slider">
+        <div class="slider__track">
+            <div class="slide">
+                <img src="" alt="">
+            </div>
+            <div class="slide">
+                <img src="" alt="">
+            </div>
+            <div class="slide">
+                <img src="" alt="">
+            </div>
+            <div class="slide">
+                <img src="" alt="">
+            </div>
+            <div class="slide">
+                <img src="" alt="">
+            </div>
+            <div class="slide">
+                <img src="" alt="">
+            </div>
+            <div class="slide">
+                <img src="" alt="">
+            </div>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
