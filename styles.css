@@ -170,7 +170,9 @@ div.fondo .container p{
     margin-bottom: .5rem;
 }
 #anuncio_mostrar{
-    display: none;
+    position: absolute;
+    z-index: 10;
+    display: block;
 }
 .social-icons{
     display: flex;
@@ -180,4 +182,10 @@ div.fondo .container p{
 }
 .social-icons button{
     background-color: transparent;
+}
+/*SLIDER*/
+.slider{
+    width: 100vw;
+    overflow: hidden;
+
 }
