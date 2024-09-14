@@ -25,6 +25,11 @@ ul, ol, li {
     list-style: none;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
 body{
     background-color: #110f0f;
     position: relative;
@@ -64,9 +69,9 @@ section.form{
 }
 
 p{
-    color: #fff;
+    color: var(--color-negro-200);
     text-align: center;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 form{
@@ -79,17 +84,6 @@ form{
     border-radius: 8px;
     border: 1px solid var(--color-400);
     box-shadow: 0 0 16px rgba(255, 255, 255, 0.337);
-}
-
-form::after{
-    content: "";
-    display: block;
-    width: 100%;
-    border: 1px solid var(--color-negro-600);
-    position: absolute;
-    left: 0;
-
-    bottom: -2.5rem;
 }
 
 h2 {
@@ -215,7 +209,6 @@ div.fondo .container p{
 .slide img{
     width: auto;
     height: 80px;
-    filter: grayscale(200%) opacity(.8);
 }
 @keyframes scroll {
     0%{
@@ -227,4 +220,121 @@ div.fondo .container p{
     100%{
         transform: translateX(0);
     }
+}
+/*MAIN*/
+main{
+    max-width: 500px;
+    margin: 0 auto;
+}
+main > .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+main .container h1{
+    color: var(--color-negro-0);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+main .container img{
+    width: auto;
+    height: 90px;
+    margin-left: 1rem;
+}
+main .container p{
+    text-align: start;
+}
+main .container .head{
+    width: 100%;
+    height: auto;
+}
+/*Horarios*/
+.horario{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.horario h3{
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.horario .container{
+    padding: .5rem;
+    border-radius: 8px;
+    background-color: var(--color-400);
+    border: 1px solid var(--color-300);
+    width: 100%;
+    color: var(--color-50);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.info{
+    display: flex;
+    vertical-align: bottom;
+}
+.info p{
+    color: var(--color-negro-0);
+    font-size: .9rem;
+    margin-left: .5rem;
+}
+.info svg{
+    transform: scale(.9);
+}
+p a{
+    text-decoration: underline;
+}
+/*Informacion*/
+section.ubicacion{
+    position: relative;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+section.ubicacion::before{
+    content: "";
+    display: block;
+    width: 80%;
+    border: 1px solid var(--color-negro-600);
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+.ubicacion h2{
+    color: var(--color-negro-200);
+}
+.ubicacion > p {
+    text-align: start;
+    font-size: .9rem;
+}
+.ubicacion iframe{
+    width: 100%;
+    height: 300px;
+}
+strong{
+    color: #ed79a5;
+    font-weight: 600;
+}
+/*Footer*/
+footer{
+    position: relative;
+    margin-top: 1rem;
+}
+footer ::before{
+    content: "";
+    display: block;
+    width: 80%;
+    border: 1px solid var(--color-negro-600);
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
 }
