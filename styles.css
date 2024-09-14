@@ -195,10 +195,11 @@ div.fondo .container p{
     align-items: center;
 }
 .slider__track{
-    width: calc(100%*6);
+    width: calc(100%*11);
     display: flex;
+    padding: 0 7rem;
     gap: 6rem;
-    animation: scroll 30s linear infinite;
+    animation: scroll 60s linear infinite;
     background-color: var(--color-400);
 }
 .slide{
@@ -208,6 +209,9 @@ div.fondo .container p{
 }
 .slide img{
     width: auto;
+    height: 60px;
+}
+.slide .chica{
     height: 80px;
 }
 @keyframes scroll {
@@ -215,11 +219,12 @@ div.fondo .container p{
         transform: translateX(0);
     }
     50%{
-        transform: translateX(calc(-80%));
+        transform: translateX(calc(-90%));
     }
     100%{
         transform: translateX(0);
     }
+
 }
 /*MAIN*/
 main{
