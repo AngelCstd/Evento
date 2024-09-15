@@ -11,8 +11,12 @@
 
 <body>
     <header class="barnav">
-        <img src="./imagenes/Logo alondra.svg" alt="">
-        <img src="./imagenes/expoEmprende.svg" alt="">
+        <nav>
+            <a href="#main">
+                <img src="./imagenes/Logo alondra.svg" alt="">
+                <img src="./imagenes/expoEmprende.svg" alt="">
+            </a>
+        </nav>
     </header>
     <div id="anuncio_mostrar">
         <div class="fondo">
@@ -24,112 +28,15 @@
             </div>
         </div>
     </div>
-    <section class="form">
-        <div class="form-container">
-            <p>Alondra te invita a adentrarte en el mundo de <strong>productos para uñas, pestañas y mas.</strong> Completa el formulario
-                y asegura <strong>tu lugar sin costo</strong></p>
-            <form id="eventForm">
-                <h2>Registro para el evento</h2>
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" placeholder="Ingresa tu nombre..." id="nombre" autocomplete="username" name="nombre"
-                    required>
 
-                <label for="apellido">Apellidos:</label>
-                <input type="text" placeholder="Ingresa tus apellidos..." id="apellido" name="apellido" required>
-
-                <label for="correo">Correo:</label>
-                <input type="email" placeholder="Ingresa tu correo electronico..." id="correo" name="email" required>
-
-                <label for="telefono">Número de teléfono:</label>
-                <input type="number" placeholder="Ingresa tu telefono..." id="telefono" name="telefono" required>
-
-                <label for="codigo_postal">Código Postal:</label>
-                <input type="text" placeholder="Ingresa tu Codigo postal..." id="codigo_postal" name="codigo_postal"
-                    required>
-
-                <label for="ciudad">Ciudad:</label>
-                <input type="text" placeholder="Ingresa tu ciudad..." id="ciudad" name="ciudad" required>
-
-                <label for="anuncio">¿Cómo te enteraste del anuncio?</label>
-                <select id="anuncio" name="anuncio" required>
-                    <option value="">Seleccione una opción</option>
-                    <option value="redes sociales">Redes sociales</option>
-                    <option value="en tienda">En tienda</option>
-                    <option value="un amigo">Un amigo</option>
-                    <option value="otro">Otro</option>
-                </select>
-
-                <div id="provisional">
-
-                </div>
-
-                <label for="objetivo">¿Cuál es tu objetivo al asistir?</label>
-                <select id="objetivo" name="objetivo" required>
-                    <option value="">Seleccione una opción</option>
-                    <option value="vender producto">Vender producto</option>
-                    <option value="ser distribuidor">Ser distribuidor</option>
-                    <option value="abrir negocio">Abrir su propio negocio</option>
-                </select>
-
-                <label for="dia">¿Qué día asistirás?</label>
-                <select id="dia" name="dia" required>
-                    <option value="">Seleccione una opción</option>
-                    <option value="sabado">Sábado 10AM - 7PM</option>
-                    <option value="domingo">Domingo 10AM - 5PM</option>
-                    <option value="ambos">Ambos dias</option>
-                </select>
-
-                <button type="submit">Enviar</button>
-                <div id="status"></div>
-            </form>
-        </div>
-
-    </section>
-
-    <aside class="slider">
-        <div class="slider__track">
-            <div class="slide">
-                <img src="./imagenes/LAlondra.png" class="chica" alt="">
-            </div>
-            <div class="slide">
-                <img src="./imagenes/LDuse.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="./imagenes/LFantasyNails.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="./imagenes/LGolle.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="./imagenes/LIoni.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="./imagenes/LItalia.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="./imagenes/LMCNails.png" class="chica" alt="">
-            </div>
-            <div class="slide">
-                <img src="./imagenes/LMoira.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="./imagenes/Lpink.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="./imagenes/LSPA.png" class="chica" alt="">
-            </div>
-            <div class="slide">
-                <img src="./imagenes/LSandyFashion.png" class="chica" alt="">
-            </div>
-        </div>
-    </aside>
-    <main>
+    <main id="main">
         <div class="container">
-            <img src="./imagenes/expoEmprende.svg" alt="Logo">
+
             <p>Descubre productos innovadores y marcas lideres en el mercado de las uñas. La Expo Emprende es <strong>tu
                 oportunidad </strong>para conocer algunas de las mejores marcas del sector.</p>
             <p>¡Preparate para inspirarte y llevar tu pasión al siguiente nivel!</p>
+            <button class="registrar"><a href="#registro">Registrate sin costo</a></button>
             <img src="./imagenes/head.png" alt="" class="head">
         </div>
         <section class="ubicacion">
@@ -222,6 +129,105 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
+    <aside class="slider">
+        <div class="slider__track">
+            <div class="slide">
+                <img src="./imagenes/LAlondra.png" class="chica" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imagenes/LDuse.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imagenes/LFantasyNails.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imagenes/LGolle.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imagenes/LIoni.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imagenes/LItalia.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imagenes/LMCNails.png" class="chica" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imagenes/LMoira.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imagenes/Lpink.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imagenes/LSPA.png" class="chica" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imagenes/LSandyFashion.png" class="chica" alt="">
+            </div>
+        </div>
+    </aside>
+    <section class="form" id="registro">
+        <div class="form-container">
+            <p>Alondra te invita a adentrarte en el mundo de <strong>productos para uñas, pestañas y mas.</strong> Completa el formulario
+                y asegura <strong>tu lugar sin costo</strong></p>
+            <form id="eventForm">
+                <h2>Registro para el evento</h2>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Ingresa tu nombre..." id="nombre" autocomplete="username" name="nombre"
+                    required>
+
+                <label for="apellido">Apellidos:</label>
+                <input type="text" placeholder="Ingresa tus apellidos..." id="apellido" name="apellido" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" placeholder="Ingresa tu correo electronico..." id="correo" name="email" required>
+
+                <label for="telefono">Número de teléfono:</label>
+                <input type="number" placeholder="Ingresa tu telefono..." id="telefono" name="telefono" required>
+
+                <label for="codigo_postal">Código Postal:</label>
+                <input type="text" placeholder="Ingresa tu Codigo postal..." id="codigo_postal" name="codigo_postal"
+                    required>
+
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" placeholder="Ingresa tu ciudad..." id="ciudad" name="ciudad" required>
+
+                <label for="anuncio">¿Cómo te enteraste del anuncio?</label>
+                <select id="anuncio" name="anuncio" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="redes sociales">Redes sociales</option>
+                    <option value="en tienda">En tienda</option>
+                    <option value="un amigo">Un amigo</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <div id="provisional">
+
+                </div>
+
+                <label for="objetivo">¿Cuál es tu objetivo al asistir?</label>
+                <select id="objetivo" name="objetivo" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="vender producto">Vender producto</option>
+                    <option value="ser distribuidor">Ser distribuidor</option>
+                    <option value="abrir negocio">Abrir su propio negocio</option>
+                </select>
+
+                <label for="dia">¿Qué día asistirás?</label>
+                <select id="dia" name="dia" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="sabado">Sábado 10AM - 7PM</option>
+                    <option value="domingo">Domingo 10AM - 5PM</option>
+                    <option value="ambos">Ambos dias</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+                <div id="status"></div>
+            </form>
+        </div>
+
+    </section>
     <footer>
         <div class="form-container">
             <p>Siguenos en nuestras redes para estar al tanto de todas las novedades y ofertas exclusivas del evento</p>

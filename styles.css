@@ -38,11 +38,15 @@ body{
 header.barnav{
     width: 100vw;
     height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
     display: flex;
     gap: .5rem;
     justify-content: center;
     align-items: center;
     padding-top: .5rem;
+    background-color: var(--color-900);
 }
 
 header img{
@@ -229,7 +233,7 @@ div.fondo .container p{
 /*MAIN*/
 main{
     max-width: 500px;
-    margin: 0 auto;
+    margin: 100px auto 0;
 }
 main > .container{
     display: flex;
@@ -254,6 +258,9 @@ main .container p{
 main .container .head{
     width: 100%;
     height: auto;
+}
+main .registrar{
+    width: 80%;
 }
 /*Horarios*/
 .horario{
@@ -307,7 +314,7 @@ section.ubicacion::before{
     width: 80%;
     border: 1px solid var(--color-negro-600);
     position: absolute;
-    z-index: 10;
+    z-index: 4;
     left: 50%;
     transform: translateX(-50%);
     top: 0;
