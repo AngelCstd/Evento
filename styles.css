@@ -46,7 +46,7 @@ header.barnav{
     justify-content: center;
     align-items: center;
     padding-top: .5rem;
-    background-color: var(--color-900);
+    background-color: #110f0f;
 }
 
 header img{
@@ -240,7 +240,7 @@ main > .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 1rem;
 }
 main .container h1{
@@ -321,7 +321,7 @@ section.ubicacion::before{
     top: 0;
 }
 .ubicacion h2{
-    color: var(--color-negro-200);
+    color: var(--color-negro-0);
 }
 .ubicacion > p {
     text-align: start;
