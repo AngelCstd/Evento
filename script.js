@@ -1,7 +1,9 @@
 let div_anuncio = document.getElementById("anuncio_mostrar")
+let h1_anuncio = document.getElementById("title_anuncio")
+let p_anuncio = document.getElementById("p_anuncio")
 document.getElementById('eventForm').addEventListener('submit', async function (e) {
     e.preventDefault();
-    
+
     let formData = {};
 
     if (document.getElementById('anuncio').value == "otro" && !document.querySelector("#anuncio_otro")) {
@@ -40,7 +42,7 @@ document.getElementById('eventForm').addEventListener('submit', async function (
             dia: document.getElementById('dia').value
         };
         await enviarDatos(formData)
-    } else if (document.getElementById('anuncio').value == "otro" && document.querySelector("#anuncio_otro").value != ""){
+    } else if (document.getElementById('anuncio').value == "otro" && document.querySelector("#anuncio_otro").value != "") {
         formData = {
             nombre: document.getElementById('nombre').value,
             apellido: document.getElementById('apellido').value,
@@ -59,20 +61,30 @@ document.getElementById('eventForm').addEventListener('submit', async function (
 
 async function enviarDatos(formData) {
     try {
-        const response = await fetch('https://hooks.zapier.com/hooks/catch/20102643/2hfza8r/', {
+        const data = await fetch('https://backexp-angelcstds-projects.vercel.app/add', {
             method: 'POST',
-            mode: "no-cors",
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(formData)
-        });
-        div_anuncio.style.display = "block"
+        })
+            .then(response => response.json());
+        if (data.ok) {
+            p_anuncio.innerHTML = "Te haremos llegar un correo con tu folio <strong>dentro de las proximas 24 horas </strong> por favor <strong>contactanos por las redes sociales en caso de que no te llegue el correo</strong> y te daremos pronta respuesta"
+            h1_anuncio.innerHTML = "Tu registro se realizo con exito"
+            div_anuncio.style.display = "block"
+        }
+        if (!data.ok){
+            p_anuncio.innerHTML = `<strong class="error">${data.message}</strong>`
+            h1_anuncio.innerHTML = `${data.error}`
+            div_anuncio.style.display = "block"
+            throw new Error(data.message)
+        }
 
     } catch (error) {
-        console.error(error)
+        console.log(error)
     }
 }
-document.getElementById("aceptar_anuncio").addEventListener("click", ()=>{
+document.getElementById("aceptar_anuncio").addEventListener("click", () => {
     div_anuncio.style.display = "none"
 })
